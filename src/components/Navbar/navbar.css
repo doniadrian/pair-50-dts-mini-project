@@ -1,0 +1,65 @@
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: .3s;
+    line-height: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-bottom: 20px;
+    padding-top: 6.8vh;
+    transition: .3s;
+    background: linear-gradient(180deg, #171717, rgba(22, 22, 22, 0));
+}
+
+.site-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header a,
+.site-header button {
+    color: #dfd3c3;
+}
+
+.site-header a.branding-link {
+    margin-left: 6.8vh;
+}
+
+.site-header .branding-link-login {
+    margin-right: 6.8vh;
+}
+
+.site-header form.form-search {
+    margin-left: auto;
+}
+
+.site-header .current-user {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+
+@media all and (max-width: 600px) {
+    form.form-search input[type="search"] {
+        max-width: 172px;
+    }
+    
+    .site-header {
+        padding-top: 20px;
+    }
+
+    .site-header a.branding-link {
+        margin-left: 20px;
+    }
+    
+    .site-header .branding-link-login {
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,52 @@
+.movie-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.movie-grid .movie-item {
+    width: 20%;
+    margin-bottom: 1rem;
+}
+
+.movie-wrapper {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+}
+
+.movie-wrapper h3.entry-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    background-color: #dfd3c3;
+    color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.movie-wrapper:hover h3.entry-title {
+    opacity: 1;
+    visibility: visible;
+}
+
+.movie-wrapper:hover img {
+    transform: scale(1.15);
+}
+
+.movie-wrapper img {
+    transition: .3s;
+}
+
+
+
+@media all and (max-width: 600px) {
+    .movie-grid .movie-item {
+        width: 50%;
+    }
+}
