@@ -33,6 +33,7 @@
 }
 
 .site-header .branding-link-login {
+    margin-left: 1rem;
     margin-right: 6.8vh;
 }
 
@@ -42,7 +43,7 @@
 
 .site-header .current-user {
     font-weight: bold;
-    margin-right: 1rem;
+    margin: 0 1rem;
 }
 
 

@@ -30,7 +30,10 @@ const Register = () => {
 		<>
 			<main id="site-main" className="site-main">
 				<div className="form-box">
-					<h3>REGISTER</h3>
+					{
+						errorMessage && <span className="info-form error">{errorMessage}</span>
+					}
+					<h2>REGISTER</h2>
 					<form className="form-field" onSubmit={handleSubmit}>
 						<input
 							name="email"
@@ -46,8 +49,10 @@ const Register = () => {
 							REGISTER
 						</button>
 					</form>
-					<span className="info-form error">{errorMessage}</span>
-					<Link className="underline black" to="/login">Already have an account? Sign in</Link>
+
+					<Link className="underline black" to="/login">
+						Already have an account? Sign in
+					</Link>
 				</div>
 			</main>
 		</>

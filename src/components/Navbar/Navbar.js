@@ -18,18 +18,21 @@ const Navbar = () => {
 		} catch (err) {
 			console.log(err);
 		}
+
 	};
 
 	return (
 		<header id="site-header" className="site-header">
 			<Link className="branding-link" to="/">
-				movie
+				movie-pair-50
 			</Link>
 
 			<Search />
-			
-			<span className="current-user">{user?.email}</span>
 
+			{
+				user?.email && <span className="current-user">{user?.email}</span>
+			}
+			
 			{user ? (
 				<button className="branding-link-login" onClick={onLogout}>
 					logout

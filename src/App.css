@@ -17,9 +17,38 @@ form.form-field input[type="email"] {
     margin-bottom: 16px;
 }
 
-.form-box>h3 {
+.form-box>h2 {
     margin-bottom: 16px;
     text-align: center;
+}
+
+button.btn-social-login {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+button.btn-social-login img {
+    width: 32px;
+    object-fit: contain;
+    margin-right: 8px;
+}
+
+.info-form {
+    font-size: 14px;
+    display: block;
+    padding: 6px 10px;
+    margin-bottom: 8px;
+    background-color: #fdbfbf;
 }
 
 section.is-section {
