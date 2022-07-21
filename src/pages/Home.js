@@ -1,7 +1,7 @@
 import React from "react";
 import MovieCard from "../components/ListingMovies";
 import Navbar from "../components/Navbar/Navbar";
-import Search from "../components/Search/Search";
+import SliderMovies from "../components/SliderMovies/SliderMovies";
 
 const Home = () => {
 	return (
@@ -9,6 +9,9 @@ const Home = () => {
 			<Navbar />
 
 			<main id="site-main" className="site-main">
+				<section className="is-section nowplaying-movies">
+					<SliderMovies/>
+				</section>
 				<section className="is-section toprated-movies">
 					<h2 className="title-section pd-screen">Top Rated</h2>
 					<MovieCard type="top_rated"/>
